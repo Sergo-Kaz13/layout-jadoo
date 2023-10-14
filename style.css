@@ -295,7 +295,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 216px;
+  min-height: 314px;
   max-width: 195px;
   width: 100%;
   transition: all ease-in 0.28s;
@@ -370,4 +370,103 @@ body {
   text-align: center;
   line-height: 26px;
   color: #5e6282;
+}
+
+/* destinations */
+
+.destinations {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.destinations_subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #5e6282;
+  text-align: center;
+}
+
+.destinations_title {
+  font-size: 50px;
+  font-weight: 700;
+  color: #14183e;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.destinations_items {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.destinations_item {
+  position: relative;
+  width: 315px;
+  height: 457px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0px 1.85185px 3.14815px 0px rgba(0, 0, 0, 0),
+    0px 8.14815px 6.51852px 0px rgba(0, 0, 0, 0.01),
+    0px 20px 13px 0px rgba(0, 0, 0, 0.01),
+    0px 38.51852px 25.48148px 0px rgba(0, 0, 0, 0.01),
+    0px 64.81481px 46.85185px 0px rgba(0, 0, 0, 0.02),
+    0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+  transition: all ease-in 0.28s;
+}
+
+.destinations_item:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.destinations_item-rome {
+  background: url(./images/rome.jpg) center / cover no-repeat;
+}
+
+.destinations_item-london {
+  background: url(./images/london.jpg) center / cover no-repeat;
+}
+
+.destinations_item-europe {
+  background: url(./images/europe.jpg) center / cover no-repeat;
+}
+
+.destinations_info {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 130px;
+  background: #fff;
+  color: #5e6282;
+  font-weight: 500;
+  line-height: 124.5%;
+  padding: 27px 20px;
+}
+
+.destinations_description {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.destinations_description:not(:last-child) {
+  margin-bottom: 19px;
+}
+
+.destinations_trip {
+  position: relative;
+  padding-left: 35px;
+}
+
+.destinations_trip::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: url(./images/navigation.svg) center / contain no-repeat;
 }
