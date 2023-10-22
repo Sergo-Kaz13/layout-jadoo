@@ -879,6 +879,10 @@ body {
   background: rgba(223, 215, 249, 0.2);
 }
 
+.subscribe:not(:last-child) {
+  margin: 166px;
+}
+
 .subscribe_title {
   color: #5e6282;
   text-align: center;
@@ -939,4 +943,126 @@ body {
   width: 70px;
   height: 70px;
   border-radius: 50%;
+}
+/* __________________ */
+
+/* footer */
+
+.footer {
+  max-width: 1060px;
+  width: 100%;
+  min-height: 275px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 86px;
+}
+
+.basic_information {
+  display: flex;
+  justify-content: space-between;
+}
+
+.jado {
+  display: flex;
+  flex-direction: column;
+  row-gap: 19px;
+}
+
+.jado_title {
+  color: #181e4b;
+  font-size: 44px;
+  font-weight: 500;
+}
+
+.jado_text {
+  font-size: 13px;
+  color: #5e6282;
+  font-weight: 500;
+  line-height: 124.5%;
+  max-width: 207px;
+  width: 100%;
+}
+
+.company,
+.contact,
+.more {
+  display: flex;
+  flex-direction: column;
+  row-gap: 34px;
+}
+
+.company_items,
+.contact_items,
+.more_items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+
+.company_title,
+.contact_title,
+.more_title {
+  color: #080809;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 124.5%;
+}
+
+.company_link,
+.contact_link,
+.more_link {
+  color: #5e6282;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 124.5%;
+}
+
+.copyright {
+  color: #5e6282;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 124.5%;
+  text-align: center;
+}
+
+.outbound_social {
+  display: flex;
+  column-gap: 25px;
+}
+
+.outbound_social:not(:last-child) {
+  margin-bottom: 26px;
+}
+
+.outbound_social img {
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+}
+
+.outbound_text {
+  color: #5e6282;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 124.5%;
+  letter-spacing: 0.1px;
+}
+
+.outbound_text:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.outbound_app {
+  display: flex;
+  column-gap: 7px;
+}
+
+.outbound_btn {
+  max-width: 105px;
+  width: 100%;
+  min-height: 35px;
+  background: #080809;
+  border-radius: 17.5px;
+  padding: 7px, 17px;
 }
